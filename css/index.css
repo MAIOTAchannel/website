@@ -87,7 +87,9 @@
         opacity: 0;
         z-index: -1;
         font-size: 0px;
-        text-indent: -9999em;
+        text-indent: 0em;
+        margin: 0px auto;
+        border-radius: 0%;
     }
 }
 .loader {
