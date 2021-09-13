@@ -78,6 +78,16 @@
 .cp_navi > ul > li > div ul > li:hover > a {
 	background-color: rgba( 255, 255, 255, 0.1);
 }
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        display: none;
+        opacity: 0;
+        z-index: -1;
+    }
+}
 .loader {
   color: #ffffff;
   font-size: 90px;
@@ -93,6 +103,9 @@
   transform: translateZ(0);
   -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
   animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+}
+loader.loaded {
+    animation: fadeOut 3s forwards;
 }
 @-webkit-keyframes load6 {
   0% {
