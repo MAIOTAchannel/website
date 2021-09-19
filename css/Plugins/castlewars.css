@@ -82,3 +82,8 @@ a {
     text-decoration: none;
     color: black;
 }
+#main{
+	margin-left:auto;
+	margin-right: auto;
+	text-align: left;
+}
